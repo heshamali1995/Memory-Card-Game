@@ -46,9 +46,6 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-#results {
     font-size: 14px;
 }
 
@@ -160,6 +157,32 @@ h2 {
 }
 
 /* End Button Div */
+
+/* Add Media Queries */
+
+@media all and (max-width: 575px) {
+    #results {
+        width: 80%;
+        font-size: 10px;
+    }
+    #memory-game {
+        width: 300px;
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+    #results {
+        width: 60%;
+        font-size: 12px;
+    }
+    #memory-game {
+        width: 400px;
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+
+/* Add Animation */
 
 @keyframes moving {
     0% {
